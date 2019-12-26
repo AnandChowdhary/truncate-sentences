@@ -4,6 +4,18 @@ const paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cura
 
 const sentence = "Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur ipsum eros, scelerisque id volutpat nec, lobortis quis ipsum nullam at diam felis sed vitae iaculis sem duis scelerisque vehicula malesuada nullam sodales eget tortor tincidunt faucibus lorem ipsum dolor sit amet, consectetur adipiscing elit mauris semper purus at leo interdum, nec egestas massa vestibulum pellentesque ornare eget tellus vel malesuada sed et orci quam quisque fermentum lacus vitae erat volutpat, et finibus turpis vulputate donec ultrices pretium rhoncus aliquam vitae blandit enim, non gravida nibh integer at lorem convallis, pulvinar ligula vitae, blandit ligula.";
 
-test("truncates a sentence", () => {
+test("truncates a paragraph", () => {
   expect(truncate(paragraph)).toBe("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ipsum eros, scelerisque id volutpat nec, lobortis quis ipsum. Nullam at diam felis. Sed vitae iaculis sem. Duis scelerisque vehicula malesuada. Nullam sodales eget tortor tincidunt faucibus.");
+});
+
+test("truncates a paragraph to a specific length", () => {
+  expect(truncate(paragraph, 100)).toBe("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+});
+
+test("truncates a sentence", () => {
+  expect(truncate(sentence)).toBe("Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur ipsum eros, scelerisque id volutpat nec, lobortis quis ipsum nullam at diam felis sed vitae iaculis sem duis scelerisque vehicula malesuada nullam sodales eget tortor tincidunt faucibus lorem ipsum dolor sit amet, consectetur adipisci...");
+});
+
+test("truncates a sentence to a specific length", () => {
+  expect(truncate(sentence, 100)).toBe("Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur ipsum eros, scelerisque id volutpa...");
 });
