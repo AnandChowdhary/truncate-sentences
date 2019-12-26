@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@types/natural@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@types/natural/-/natural-0.6.3.tgz#7816e46f2c0c8dad82111d36e6e37c4c5a121f92"
+  integrity sha512-lObtptI4gTrBKclOl/2kaYQzncYYHQGYv0ONIk94OEifByXLnxiBlZs/5s/QbMJmTRiNt5RvnNjGXRJInbd4IA==
+  dependencies:
+    "@types/node" "*"
+
+"@types/node@*":
+  version "13.1.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.1.1.tgz#6d11a8c2d58405b3db9388ab740106cbfa64c3c9"
+  integrity sha512-hx6zWtudh3Arsbl3cXay+JnkvVgCKzCWKv42C9J01N2T2np4h8w5X8u6Tpz5mj38kE3M9FM0Pazx8vKFFMnjLQ==
+
 afinn-165@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/afinn-165/-/afinn-165-1.0.3.tgz#3968346229659bad79f9655017087c1771cc9eb6"
