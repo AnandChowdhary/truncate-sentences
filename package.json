@@ -2,6 +2,7 @@
   "name": "truncate-sentences",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc"
