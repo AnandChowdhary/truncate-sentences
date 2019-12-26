@@ -6,11 +6,12 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
     "@types/natural": "^0.6.3",
+    "coveralls": "^3.0.9",
     "jest": "^24.9.0",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.4"
