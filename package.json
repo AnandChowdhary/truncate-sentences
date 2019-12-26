@@ -1,0 +1,9 @@
+{
+  "name": "truncate-sentences",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
+}
