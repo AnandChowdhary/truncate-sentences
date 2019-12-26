@@ -7,9 +7,9 @@ export default (text: string, limit: number = 300) => {
   let length = 0;
   for (const token of tokens) {
     if (length + token.length <= limit) {
-      result += ` ${token}`;
+      result += `${token} `;
       length += token.length;
     } else break;
   }
-  return result || (text.length > limit ? `${text.substring(0, limit)}...` : text);
+  return result.trim() || (text.length > limit ? `${text.substring(0, limit)}...` : text);
 }
