@@ -19,3 +19,7 @@ test("truncates a sentence", () => {
 test("truncates a sentence to a specific length", () => {
   expect(truncate(sentence, 100)).toBe("Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur ipsum eros, scelerisque id volutpa...");
 });
+
+test("truncates a paragraph to a specific length with ellipsis", () => {
+  expect(truncate(paragraph, 100, true)).toBe("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ipsum eros, scelerisque id volutp...");
+});
