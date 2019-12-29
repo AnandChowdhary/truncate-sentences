@@ -9,7 +9,9 @@
 
 [![NPM](https://nodei.co/npm/truncate-sentences.png)](https://www.npmjs.com/package/truncate-sentences)
 
-A Node.js package to simply truncate a paragraph to sentences. It uses [Natural](https://github.com/NaturalNode/natural) under the hood to tokenize sentences and return a string.
+A Node.js package to simply truncate a paragraph to complete sentences. It uses [Natural](https://github.com/NaturalNode/natural) under the hood to tokenize sentences.
+
+For example, `truncate("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ipsum eros, scelerisque id volutpat nec, lobortis quis ipsum. Nullam at diam felis. Sed vitae iaculis sem. Duis scelerisque vehicula malesuada. Nullam sodales eget tortor tincidunt faucibus.", 200)` will return the first few sentences until reaching 200 characters: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ipsum eros, scelerisque id volutpat nec, lobortis quis ipsum. Nullam at diam felis. Sed vitae iaculis sem.` instead of simply truncating a string and adding ellipses.
 
 ## ⭐ Usage
 
