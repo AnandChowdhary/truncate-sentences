@@ -9,15 +9,15 @@
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.25",
-    "@types/natural": "^0.6.3",
-    "coveralls": "^3.0.9",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.2.0",
-    "typescript": "^3.7.4"
+    "@types/jest": "^29.2.3",
+    "@types/natural": "^5.1.1",
+    "coveralls": "^3.1.1",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.3"
   },
   "dependencies": {
-    "natural": "^0.6.3"
+    "natural": "^5.2.3"
   },
   "jest": {
     "roots": [
