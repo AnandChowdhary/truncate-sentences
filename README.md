@@ -26,7 +26,10 @@ Truncate a paragraph:
 ```js
 import truncate from "truncate-sentences";
 
-truncate("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ipsum eros, scelerisque id volutpat nec, lobortis quis ipsum. Nullam at diam felis. Sed vitae iaculis sem. Duis scelerisque vehicula malesuada. Nullam sodales eget tortor tincidunt faucibus.", 200);
+truncate(
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ipsum eros, scelerisque id volutpat nec, lobortis quis ipsum. Nullam at diam felis. Sed vitae iaculis sem. Duis scelerisque vehicula malesuada. Nullam sodales eget tortor tincidunt faucibus.",
+  200
+);
 
 // Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ipsum eros, scelerisque id volutpat nec, lobortis quis ipsum. Nullam at diam felis. Sed vitae iaculis sem.
 ```
@@ -38,13 +41,13 @@ If the first sentence is already longer than the limit, it adds an ellipsis (`..
 Install dependencies:
 
 ```bash
-yarn
+npm install
 ```
 
 Compile Typescript to ES6 before publishing to NPM:
 
 ```bash
-yarn build
+npm run build
 ```
 
 ## 📝 License
